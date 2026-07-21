@@ -1,131 +1,174 @@
-# 🧠 Brain Tumor Detection - Flutter Application
-
-A modern Flutter mobile application that enables users to upload MRI brain scans, receive AI-powered tumor predictions, visualize model-generated heatmaps, and manage their prediction history. The app communicates with a Flask REST API deployed on Render, providing fast and reliable real-time predictions.
-
----
-## 
 <p align="center">
-  <img src="assets/appicon.png" width="120" alt="Brain Tumor App Logo">
+  <img src="assets/appicon.png" width="120" alt="Brain Tumor AI">
 </p>
 
-## 🔗 Project Ecosystem
+<h1 align="center">🧠 Brain Tumor Detection - Flutter Application</h1>
 
-🌐 **Live Backend API**  
-https://brain-tumor-api-zg3b.onrender.com
+<p align="center">
+AI-powered mobile application for real-time brain tumor detection using Flutter, Flask, TensorFlow Lite, and PostgreSQL.
+</p>
 
-⚙️ **Backend Repository**  
-https://github.com/shalemraju1/brain-tumor-api
+<p align="center">
 
-👨‍💻 **Developer Portfolio**  
-https://portfolio-lime-one-10.vercel.app
+[![Flutter](https://img.shields.io/badge/Flutter-3.x-blue?logo=flutter)]()
+[![Dart](https://img.shields.io/badge/Dart-3.x-0175C2?logo=dart)]()
+[![Flask](https://img.shields.io/badge/Backend-Flask-black?logo=flask)]()
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-336791?logo=postgresql)]()
+
+</p>
 
 ---
 
-## ✨ Features
+# 🔗 Project Links
 
-- 🔐 User Registration & Login
-- 🧠 AI-based Brain Tumor Detection
+| Resource | Link |
+|----------|------|
+| 🌐 Live Backend API | https://brain-tumor-api-zg3b.onrender.com |
+| ⚙️ Backend Repository | https://github.com/shalemraju1/brain-tumor-api |
+| 💻 Portfolio | https://portfolio-lime-one-10.vercel.app |
+| 👨‍💻 LinkedIn | https://www.linkedin.com/in/shalem-raju-bejawada-170b40290/ |
+
+---
+
+# 📱 Overview
+
+Brain Tumor Detection is a Flutter application that enables users to upload MRI brain scans and receive AI-powered predictions through a Flask REST API. The application provides tumor classification, confidence score, heatmap visualization, report generation, and prediction history while maintaining a modern mobile experience.
+
+---
+
+# ✨ Features
+
+- 🔐 Secure Login & Registration
+- 🧠 AI Brain Tumor Prediction
 - 📤 MRI Image Upload
-- 📊 Confidence Score & Risk Assessment
+- 📊 Confidence Score
 - 🔥 Heatmap Visualization
-- 📄 Prediction Report Generation
+- 📄 PDF Report Generation
 - 📜 Prediction History
-- 👤 User Profile Management
-- 🌙 Modern Dark Theme UI
-- ☁️ Real-time Backend Integration
+- 👤 User Profile
+- 🌙 Dark Theme
+- ☁️ Cloud Backend Integration
 
 ---
 
-# 📱 Application Screenshots
+# 📸 Application Screenshots
 
-## Login
+<table align="center">
+<tr>
+<td align="center">
 
-![Login](assets/login.jpeg)
+<b>Login</b><br>
+
+<img src="assets/login.jpeg" width="250"/>
+
+</td>
+
+<td align="center">
+
+<b>Dashboard</b><br>
+
+<img src="assets/dashboard.jpeg" width="250"/>
+
+</td>
+</tr>
+
+<tr>
+<td align="center">
+
+<b>Prediction</b><br>
+
+<img src="assets/predetcion.jpeg" width="250"/>
+
+</td>
+
+<td align="center">
+
+<b>Prediction Result</b><br>
+
+<img src="assets/result.jpeg" width="250"/>
+
+</td>
+</tr>
+
+<tr>
+<td align="center">
+
+<b>History</b><br>
+
+<img src="assets/history.jpeg" width="250"/>
+
+</td>
+
+<td align="center">
+
+<b>Profile</b><br>
+
+<img src="assets/profile.jpeg" width="250"/>
+
+</td>
+</tr>
+
+<tr>
+<td colspan="2" align="center">
+
+<b>Working Demo</b><br>
+
+<img src="assets/working.jpeg" width="260"/>
+
+</td>
+</tr>
+</table>
 
 ---
 
-## Dashboard
+# 🏗️ Architecture
 
-![Dashboard](assets/dashboard.jpeg)
-
----
-
-## Prediction
-
-![Prediction](assets/predetcion.jpeg)
-
----
-
-## Prediction Result
-
-![Result](assets/result.jpeg)
-
----
-
-## Prediction History
-
-![History](assets/history.jpeg)
-
----
-
-## User Profile
-
-![Profile](assets/profile.jpeg)
-
----
-
-## Working Demo
-
-![Working](assets/working.jpeg)
+```text
+Flutter Mobile App
+        │
+        │ HTTP Requests
+        ▼
+Flask REST API (Render)
+        │
+        ├── TensorFlow Lite
+        └── PostgreSQL
+        │
+        ▼
+Prediction Response
+```
 
 ---
 
 # 🛠️ Tech Stack
 
 | Category | Technology |
-|----------|------------|
+|------------|------------|
 | Framework | Flutter |
 | Language | Dart |
 | Backend | Flask REST API |
 | AI Model | TensorFlow Lite |
 | Database | PostgreSQL |
-| Authentication | Session-Based |
 | Storage | SharedPreferences |
+| Authentication | Session-Based |
 | Deployment | Render |
-
----
-
-# ☁️ Backend Integration
-
-The application communicates with the deployed Flask backend.
-
-**API Base URL**
-
-```
-https://brain-tumor-api-zg3b.onrender.com
-```
 
 ---
 
 # 🚀 Getting Started
 
-## Clone Repository
+### Clone Repository
 
 ```bash
 git clone https://github.com/shalemraju1/brain-tumor-flutter-app.git
 ```
 
----
-
-## Install Dependencies
+### Install Dependencies
 
 ```bash
 flutter pub get
 ```
 
----
-
-## Run the Application
+### Run
 
 ```bash
 flutter run
@@ -135,13 +178,13 @@ flutter run
 
 # 📦 Build APK
 
-### Debug APK
+### Debug
 
 ```bash
 flutter build apk
 ```
 
-### Release APK
+### Release
 
 ```bash
 flutter build apk --release
@@ -151,14 +194,14 @@ flutter build apk --release
 
 # 📂 Project Structure
 
-```
+```text
 lib/
 │
-├── screens/
-├── widgets/
-├── services/
 ├── models/
+├── screens/
+├── services/
 ├── utils/
+├── widgets/
 └── main.dart
 ```
 
@@ -166,12 +209,12 @@ lib/
 
 # ⚙️ Configuration
 
-Before running the application, ensure:
+Before running the project:
 
-- Flutter SDK is installed
-- Android SDK is configured
-- Internet permission is enabled
-- Backend API URL is correctly configured
+- Install Flutter SDK
+- Configure Android SDK
+- Enable Internet Permission
+- Set the backend API URL
 
 ---
 
@@ -182,8 +225,8 @@ Before running the application, ensure:
 - Offline Prediction Cache
 - Explainable AI Dashboard
 - Cloud Report Backup
+- Doctor Consultation
 - Biometric Authentication
-- Doctor Consultation Module
 
 ---
 
@@ -194,4 +237,6 @@ Before running the application, ensure:
 - GitHub: https://github.com/shalemraju1
 - LinkedIn: https://www.linkedin.com/in/shalem-raju-bejawada-170b40290/
 
-Developed as a Final Year AI/ML Project using Flutter, Flask, TensorFlow Lite, and PostgreSQL.
+---
+
+⭐ If you found this project useful, consider giving the repository a star.
