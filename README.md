@@ -1,65 +1,197 @@
-# Brain Tumor Detection Mobile Application
+# 🧠 Brain Tumor Detection - Flutter Application
 
-## Overview
+A modern Flutter mobile application that enables users to upload MRI brain scans, receive AI-powered tumor predictions, visualize model-generated heatmaps, and manage their prediction history. The app communicates with a Flask REST API deployed on Render, providing fast and reliable real-time predictions.
 
-This Flutter application allows users to upload MRI brain images and receive predictions from a Flask-based backend API. The app provides visualization, risk assessment, and report generation.
+---
+## 
+<p align="center">
+  <img src="assets/appicon.png" width="120" alt="Brain Tumor App Logo">
+</p>
 
-## Features
+## 🔗 Project Ecosystem
 
-* User registration and login
-* Image upload for prediction
-* Tumor classification results
-* Confidence score and risk level display
-* Heatmap visualization
-* Prediction history tracking
-* PDF report generation
-* Dark theme support
-
-## Technology Stack
-
-* Flutter (Dart)
-* REST API integration
-* SharedPreferences for session handling
-
-## Backend Integration
-
-This application communicates with a Flask API hosted on Render.
-
-Base URL:
+🌐 **Live Backend API**  
 https://brain-tumor-api-zg3b.onrender.com
 
-## Application Screens
+⚙️ **Backend Repository**  
+https://github.com/shalemraju1/brain-tumor-api
 
-* Login Screen
-* Registration Screen
-* Dashboard
-* Upload Screen
-* Result Screen
-* History Screen
-* Profile Screen
+👨‍💻 **Developer Portfolio**  
+https://portfolio-lime-one-10.vercel.app
 
-## Setup Instructions
+---
 
-1. Install dependencies:
-   flutter pub get
+## ✨ Features
 
-2. Run the application:
-   flutter run
+- 🔐 User Registration & Login
+- 🧠 AI-based Brain Tumor Detection
+- 📤 MRI Image Upload
+- 📊 Confidence Score & Risk Assessment
+- 🔥 Heatmap Visualization
+- 📄 Prediction Report Generation
+- 📜 Prediction History
+- 👤 User Profile Management
+- 🌙 Modern Dark Theme UI
+- ☁️ Real-time Backend Integration
 
-## Build APK
+---
 
-Debug:
+# 📱 Application Screenshots
+
+## Login
+
+![Login](assets/login.jpeg)
+
+---
+
+## Dashboard
+
+![Dashboard](assets/dashboard.jpeg)
+
+---
+
+## Prediction
+
+![Prediction](assets/predetcion.jpeg)
+
+---
+
+## Prediction Result
+
+![Result](assets/result.jpeg)
+
+---
+
+## Prediction History
+
+![History](assets/history.jpeg)
+
+---
+
+## User Profile
+
+![Profile](assets/profile.jpeg)
+
+---
+
+## Working Demo
+
+![Working](assets/working.jpeg)
+
+---
+
+# 🛠️ Tech Stack
+
+| Category | Technology |
+|----------|------------|
+| Framework | Flutter |
+| Language | Dart |
+| Backend | Flask REST API |
+| AI Model | TensorFlow Lite |
+| Database | PostgreSQL |
+| Authentication | Session-Based |
+| Storage | SharedPreferences |
+| Deployment | Render |
+
+---
+
+# ☁️ Backend Integration
+
+The application communicates with the deployed Flask backend.
+
+**API Base URL**
+
+```
+https://brain-tumor-api-zg3b.onrender.com
+```
+
+---
+
+# 🚀 Getting Started
+
+## Clone Repository
+
+```bash
+git clone https://github.com/shalemraju1/brain-tumor-flutter-app.git
+```
+
+---
+
+## Install Dependencies
+
+```bash
+flutter pub get
+```
+
+---
+
+## Run the Application
+
+```bash
+flutter run
+```
+
+---
+
+# 📦 Build APK
+
+### Debug APK
+
+```bash
 flutter build apk
+```
 
-Release:
+### Release APK
+
+```bash
 flutter build apk --release
+```
 
-## Notes
+---
 
-* Ensure correct API base URL is configured.
-* Internet permission must be enabled in AndroidManifest.xml.
-* Error handling is implemented for API failures.
+# 📂 Project Structure
 
-## Author
+```
+lib/
+│
+├── screens/
+├── widgets/
+├── services/
+├── models/
+├── utils/
+└── main.dart
+```
 
-C5 Team
+---
+
+# ⚙️ Configuration
+
+Before running the application, ensure:
+
+- Flutter SDK is installed
+- Android SDK is configured
+- Internet permission is enabled
+- Backend API URL is correctly configured
+
+---
+
+# 🔮 Future Enhancements
+
+- Push Notifications
+- Multi-language Support
+- Offline Prediction Cache
+- Explainable AI Dashboard
+- Cloud Report Backup
+- Biometric Authentication
+- Doctor Consultation Module
+
+---
+
+# 👨‍💻 Author
+
+**Shalem Raju Bejawada**
+
+- GitHub: https://github.com/shalemraju1
+- LinkedIn: https://www.linkedin.com/in/shalem-raju-bejawada-170b40290/
+
+Developed as a Final Year AI/ML Project using Flutter, Flask, TensorFlow Lite, and PostgreSQL.
